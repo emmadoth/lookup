@@ -7,7 +7,7 @@
 
 int main()
 {
-    //         48672636 fits into 500 mib on windows
+    //         48672638 fits into 500 mib
     int m = std::strlen("#ifndef _h_table\n#define _h_table\nconst int size=") + static_cast<int>(std::floor(std::log10(size))) + 1 + std::strlen(";const char*lookup[]={") + std::strlen("};\n#endif\n");
     long double sum = 0;
     for(int i = 1; i < (size + 1); ++i)
