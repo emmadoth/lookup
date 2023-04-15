@@ -10,9 +10,8 @@ int main()
     f <<
 "#ifndef _h_table\n\
 #define _h_table\n\
-const int size=" << s << ";" <<
-"const char*lookup[]" <<
-"={";
+const int size=" << s <<
+";const char*lookup[]={";
 
     for(int i = 0; i < s; ++i)
     {
