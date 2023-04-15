@@ -1,6 +1,6 @@
 WARN = -Wall -Wextra -Wconversion -Wvla
 
-default: c
+default: cc
 
 cc:
 	$(CXX) $(WARN) main.cc -o lupgen
@@ -8,7 +8,7 @@ cc:
 gen: cc
 	./lupgen
 
-c: gen
+test: gen
 	$(CC) $(WARN) test1.c -o test1
 	$(CC) $(WARN) test2.c -o test2
 
